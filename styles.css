@@ -1,0 +1,302 @@
+body {
+  background-color: #ebe8e2;
+}
+th {
+  color: #2f2235;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+td,
+th {
+  padding: 10px;
+}
+
+li {
+  margin: 20px;
+}
+
+.name {
+  min-height: 100%;
+  grid-area: name;
+}
+
+.header,
+.mainContent,
+.navBar,
+.footer {
+  color: #3f3244;
+}
+.header {
+  grid-area: header;
+}
+
+.mainContent {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navButton {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 35px;
+  background-color: #78866b;
+  width: 100px;
+  border-width: 5px;
+}
+.nav-title {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 8px;
+}
+.header {
+  display: grid;
+  grid-template-areas:
+    "name videoIntro"
+    "major aboutMe";
+}
+
+.aboutMe {
+  font-size: 20px;
+  padding: 100px;
+  margin: 0px;
+}
+
+.major {
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.htmlLang {
+  grid-area: HTML;
+}
+.cssLang {
+  grid-area: CSS;
+}
+.pyLang {
+  grid-area: python;
+}
+.amLang {
+  grid-area: amLang;
+}
+.loremLang {
+  grid-area: loremLang;
+}
+.dolorLang {
+  grid-area: dolorLang;
+}
+
+.link {
+  margin: 10px;
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to left,
+    #9ec5ab,
+    #32746d 30%,
+    #104f55 100%
+  );
+  transition: 0.15s;
+  background-size: 150% auto;
+}
+
+.button:visited {
+  color: #bfc3ba;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 5px rgb(44, 44, 44);
+  background-position: right center;
+}
+.cLang,
+.htmlLang,
+.cssLang,
+.pyLang,
+.amLang,
+.loremLang,
+.dolorLang {
+  transition: 0.15s;
+}
+
+.cLang:hover,
+.htmlLang:hover,
+.cssLang:hover,
+.pyLang:hover,
+.amLang:hover,
+.loremLang:hover,
+.dolorLang:hover {
+  scale: 1.5;
+  color: #627754;
+}
+.navbar {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+.restofBody {
+  padding-top: 95px;
+}
+
+@media (max-width: 780px) {
+  .aboutMe {
+    padding: 53px;
+    font-size: 15px;
+  }
+  .major {
+    margin: 50px;
+  }
+  .restofBody {
+    padding-top: 55px;
+  }
+  .cardOne {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    grid-template-areas:
+      "nav nav nav nav"
+      "header header header"
+      "main main main"
+      "footer footer footer";
+    grid-template-columns: 20px 1fr 1fr 1fr;
+  }
+  .videoIntro {
+    padding-left: 15px;
+  }
+
+  .navButton {
+    width: 80px;
+    margin: 10px;
+  }
+
+  .header {
+    grid-template-areas:
+      " name name"
+      " major major"
+      " aboutMe aboutMe"
+      "videoIntro videoIntro ";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .major {
+    grid-area: major;
+    padding-left: 50px;
+  }
+  .videoIntro {
+    grid-area: videoIntro;
+  }
+
+  .aboutMe {
+    width: 75%;
+    grid-area: aboutMe;
+    margin-left: 50px;
+  }
+  .footer {
+    left: 30px;
+  }
+  .pic1,
+  .pic2 {
+    width: 100%;
+  }
+  .pic2 {
+    padding-top: 20px;
+  }
+  .pic1:hover,
+  .pic2:hover {
+    width: 150%;
+  }
+  .infoDNA {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .aboutMe {
+    padding: 30px;
+    font-size: 15px;
+  }
+  .footer {
+    left: 30px;
+  }
+  .pic1,
+  .pic2 {
+    width: 100%;
+  }
+  .pic2 {
+    padding-top: 20px;
+  }
+  .pic1:hover,
+  .pic2:hover {
+    width: 150%;
+  }
+  .infoDNA {
+    padding-top: 40px;
+  }
+}
+.navbutton {
+  color: white;
+}
+
+.navbutton {
+  color: white;
+}
+.headerOne {
+  background-image: linear-gradient(to top, #ebe8e2, #78866b);
+}
+.majortitle {
+  padding-left: 50px;
+}
+.footerBackground {
+  background-image: linear-gradient(to bottom, #ebe8e2, #78866b);
+}
+
+.name {
+  font-family: "Dancing Script";
+}
+
+.restHeader {
+  font-family: "Afacad Flux";
+  font-size: 20px;
+}
+
+.body {
+  font-family: "PT Serif";
+}
+
+.link {
+  color: #78866b;
+  transition: 0.15s;
+}
+.link:hover {
+  color: black;
+}
+.link:visited {
+  color: #6d1271;
+}
+
+.forms {
+  margin-top: 50px;
+}

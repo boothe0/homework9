@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Homework Assignment 9</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dancing+Script:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body class="body">
+    <div
+      class="navbar fixed navbar-expand-lg navbar-dark "
+      style="background-color: #78866b"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navigation</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse btn-group dropend"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown" id="dropdownMenu">
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Sections corresponding to each dropdown item -->
+    <div class="restofBody">
+      <div class="container headerOne">
+            <h1 class="col name">Elizabeth Booth</h1>
+            <h2 class="col" id="greetingSec"></h2>
+            <div class="row">
+              <h3 class="col restHeader"><ins>Software Engineer</ins></h3>
+              <p class="col-sm restHeader lead text-center" id="summary">
+                Hi! I am a sophmore in college at NAU majoring in Software
+                Engineering. I work with C and C++ as have explored both embedded
+                systems and game development. Since both Raspberry Pi and Arduino can
+                use C programming. I have been practicing my skills with both these
+                microcontrollers. I have also used unitygame engine to see what is
+                possible when combining art and code together.
+              </p>
+              <video
+                class="col"
+                controls
+                width="400"
+                height="400"
+                poster="videoCover.jpg"
+              >
+                <source src="Introduction.mp4" type="video/mp4" />
+                Intro Video
+              </video>
+            </div>
+          </div>
+          <div class="body">
+            <div class="container">
+              <form id="skillsForm" class="form-inline forms">
+                <input type="text" id="usrInput" class="form-control" placeholder="Enter a skill">
+                <button type="button" id="submitButton" class="btn btn-outline-dark">Add Skills</button>
+              </form>
+              <ul class="skills list-unstyled" id="skillsList">
+              </ul>
+              </div>
+                <h4 class="h2"> Projects </h4>
+          <button id="sortButton" class="btn btn-primary mb-3">Sort by Deadline</button>
+          <div id="projectsDynam" class="row"></div>
+
+
+            <h4 class="h2">Education and Experience</h4>
+            <div id="tables-container"></div>
+            </div>
+
+            <div class="container footerBackground">
+              <div class="row">
+                <p class="col-2">
+                  <a
+                    class="link" href="mailto:ehb48@nau.edu?cc=name2@r
+                  apidtables.com&subject=The%20subject%20of%2
+                  0the%20email&body=The%20body%20of%20the
+                  %20email"
+                  >
+                    Email
+                  </a>
+                </p>
+                <p class="col-2">
+                  <a class="link" href="calto:5207717955"> Phone Number </a>
+                </p>
+                <p class="col-2">
+                  <a
+                    class="link"
+                    href="https://www.linkedin.com/in/elizabeth-booth/"
+                    target="_blank"
+                    >Linkedin</a
+                  >
+                </p>
+                <p id="contacts" class="col">
+                  <a class="link" href="https://github.com/boothe0" target="_blank"
+                    >Github</a
+                  >
+                </p>
+              </div>
+              <p class="col">
+                <a
+                  href="https://docs.google.com/document/d/1Wsr52St7GW_aupO6qJfTLLu6takmB9IM/export?format=pdf"
+                  class="btn btn-outline-dark"
+                  id="downloadResumeBtn"
+                  role="button"
+                  aria-pressed="true"
+                  target="_blank"
+                  onclick="resumeAlert();"
+                  >Download Resume</a
+                >
+              </p>
+            </div>
+          </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
